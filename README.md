@@ -15,3 +15,16 @@ Gruntfile.js の記述に従い、bower タスクを実行する。
 - Gruntfile.js に bower 用の設定が書いてある
 - bower.json の内容も利用する(取得するライブラリは bower.json に列挙してある)
 - 依存ライブラリを追加する場合は `bower install <ライブラリ> --save` (bower.json に追加してくれる)
+
+### Gruntfile.js
+
+#### `bower.install.options`
+
+- targetDir: bower で取得されたパッケージの main に記述されているファイルのコピー先(のルートディレクトリ). main に書かれているのと違うファイルをコピーする場合は bower.json の exportsOverride を設定する
+- layout: byType (デフォルト) or byComponent or カスタム。ファイルの種類でディレクトリを分けるか、コンポーネント名でディレクトリを分けるか
+- cleanTargetDir: コピー先ディレクトリを消去してからコピーするかどうか.まるっと消される。
+
+
+## 参考
+
+http://yosuke-furukawa.hatenablog.com/entry/2013/06/04/085537 が非常にわかりやすかった。
