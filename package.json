@@ -1,0 +1,8 @@
+{
+  "name": "sandbox-grunt-bower",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt-bower-task": "^0.4.0",
+    "grunt": "^0.4.5"
+  }
+}
